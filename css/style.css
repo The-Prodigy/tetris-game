@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    margin-right: 120px;
+
+    position: relative;
+    width: 502px;
+    height: 700px;
+    border: solid 1px #000;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.tetris {
+    width: 502px;
+    height: 900px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #b8b5b5;
+}
+.figure, .set{
+    background-color: #383997;
+}
+.rules {
+    font-size: 25px;
+    font-weight: 500;
+}
+.result {
+    margin: 20px auto;
+}
+.input {
+    border: solid 1px #b9b5b5;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.modal-first {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    border-radius: 50px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-first {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #383997;
+    z-index: 1;
+}
+.btn {
+    width: 350px;
+    height: 100px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 40px;
+    outline: none;
+    
+    transition: background-color 0.4s ease, transform 0.3s ease-in;
+}
+.btn:last-child {
+    margin: 0;
+}
+.btn:hover {
+    background: #383997;
+    color: #fff;
+    transform: scale(1.1);
+}
+.last-screen {
+    display: none;
+}
+.overlay-end {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #8383aa;
+    opacity: 0.6;
+}
+.modal-last {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d0d0da;
+    border-radius: 50px;
+    padding: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.text {
+    font-size: 35px;
+    margin: 0;
+}
+.gameover {
+    font-size: 60px;
+    margin-bottom: 10px;
+}

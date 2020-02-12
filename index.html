@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="first-screen">
+        <div class="overlay-first"></div>
+
+        <div class="modal-first">
+            <button class="btn easy">Easy</button>
+            <button class="btn normal">Normal</button>
+            <button class="btn hard">Hard</button>
+        </div>    
+    </div>
+
+    <div class="content">
+        <div class="game">
+            <div class="main">
+            </div>
+            <div class="rules">
+                <p>Arrow up - rotate figure</p>
+                <p>Arrow left - move left</p>
+                <p>Arrow right - move right</p>
+                <p>Arrow down - speed up</p>
+            </div>        
+        </div> 
+        <div class="result">
+            <input type="text" class="input" value="Score: " readonly>
+        </div>
+    </div>
+
+    <div class="last-screen">
+        <div class="overlay-end"></div>
+
+        <div class="modal-last">
+            <div class="modal-text">
+                <p class="gameover text">Game over</p>
+                <p class="game-result text"></p>    
+            </div>
+            <button class="btn restart">Restart</button>
+        </div>    
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
